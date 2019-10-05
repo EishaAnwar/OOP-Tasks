@@ -1,5 +1,4 @@
 /// Date and Day of week calculator 
-//2018-CS-37
 
 #include "pch.h"
 #include <iostream>

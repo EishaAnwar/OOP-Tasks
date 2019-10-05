@@ -26,71 +26,71 @@ public:
 
 };
 
-Date2019::Date2019()								//default contructor intialize the date to the first date of year
+Date2019::Date2019()						//default contructor intialize the date to the first date of year
 {
 	d = 1;
 	m = 1;
 }
-Date2019::Date2019(int dd)							//constructor to initialize the date in date and month
+Date2019::Date2019(int dd)					//constructor to initialize the date in date and month
 {
 	if ((dd >= 1) && (dd <= 365))
 	{
-		if ((dd >= 1) && (dd <= 31))										//Range of days of Month January
+		if ((dd >= 1) && (dd <= 31))			//Range of days of Month January
 		{
 			d = dd;
 			m = 1;
 		}
-		else if ((dd > 31) && (dd <= 59))									//Range of days of Month February
+		else if ((dd > 31) && (dd <= 59))		//Range of days of Month February
 		{
 			d = dd - 31;
 			m = 2;
 		}
-		else if ((dd > 59) && (dd <= 90))									//Range of days of Month March
+		else if ((dd > 59) && (dd <= 90))		//Range of days of Month March
 		{
 			d = dd - 59;
 			m = 3;
 		}
-		else if ((dd > 90) && (dd <= 120))									//Range of days of Month April
+		else if ((dd > 90) && (dd <= 120))		//Range of days of Month April
 		{
 			d = dd - 90;
 			m = 4;
 		}
-		else if ((dd > 120) && (dd <= 151))									//Range of days of Month May
+		else if ((dd > 120) && (dd <= 151))		//Range of days of Month May
 		{
 			d = dd - 20;
 			m = 5;
 		}
-		else if ((dd > 151) && (dd <= 181))									//Range of days of Month June
+		else if ((dd > 151) && (dd <= 181))		//Range of days of Month June
 		{
 			d = dd - 151;
 			m = 6;
 		}
-		else if ((dd > 181) && (dd <= 212))									//Range of days of Month July
+		else if ((dd > 181) && (dd <= 212))		//Range of days of Month July
 		{
 			d = dd - 181;
 			m = 7;
 		}
-		else if ((dd > 212) && (dd <= 243))									//Range of days of Month August
+		else if ((dd > 212) && (dd <= 243))		//Range of days of Month August
 		{
 			d = dd - 212;
 			m = 8;
 		}
-		else if ((dd > 243) && (dd <= 273))									//Range of days of Month September
+		else if ((dd > 243) && (dd <= 273))		//Range of days of Month September
 		{
 			d = dd - 243;
 			m = 9;
 		}
-		else if ((dd > 273) && (dd <= 304))									//Range of days of Month October
+		else if ((dd > 273) && (dd <= 304))		//Range of days of Month October
 		{
 			d = dd - 273;
 			m = 10;
 		}
-		else if ((dd > 304) && (dd <= 334))									//Range of days of Month November
+		else if ((dd > 304) && (dd <= 334))		//Range of days of Month November
 		{
 			d = dd - 304;
 			m = 11;
 		}
-		else if ((dd > 334) && (dd <= 365))									//Range of days of Month December
+		else if ((dd > 334) && (dd <= 365))		//Range of days of Month December
 		{
 			d = dd - 334;
 			m = 12;
@@ -106,7 +106,7 @@ Date2019::Date2019(int dd, int mm)
 {
 	switch (mm)
 	{
-	case 1: case 3: case 5: case 7: case 8: case 10: case 12:			//Months Having 31 days
+	case 1: case 3: case 5: case 7: case 8: case 10: case 12://Months Having 31 days
 	{
 		if ((dd >= 1) && (dd <= 31))
 		{
@@ -121,7 +121,7 @@ Date2019::Date2019(int dd, int mm)
 	}
 	case 2:
 	{
-		if ((dd >= 1) && (dd <= 28))									//Months Having 28 days
+		if ((dd >= 1) && (dd <= 28))			//Months Having 28 days
 		{
 			d = dd;
 			m = mm;
@@ -132,7 +132,7 @@ Date2019::Date2019(int dd, int mm)
 		}
 		break;
 	}
-	case 4: case 6: case 9: case 11:									//Months Having 30 days
+	case 4: case 6: case 9: case 11:			//Months Having 30 days
 	{
 		if ((dd >= 1) && (dd <= 30))
 		{
@@ -155,7 +155,7 @@ void Date2019::setdate(int dd, int mm)
 {
 	switch (mm)
 	{
-	case 1: case 3: case 5: case 7: case 8: case 10: case 12:			//Months Having 31 days
+	case 1: case 3: case 5: case 7: case 8: case 10: case 12://Months Having 31 days
 	{
 		if ((dd >= 1) && (dd <= 31))
 		{
@@ -170,7 +170,7 @@ void Date2019::setdate(int dd, int mm)
 	}
 	case 2:
 	{
-		if ((dd >= 1) && (dd <= 28))									//Months Having 28 days
+		if ((dd >= 1) && (dd <= 28))			//Months Having 28 days
 		{
 			d = dd;
 			m = mm;
@@ -181,7 +181,7 @@ void Date2019::setdate(int dd, int mm)
 		}
 		break;
 	}
-	case 4: case 6: case 9: case 11:									//Months Having 30 days
+	case 4: case 6: case 9: case 11:			//Months Having 30 days
 	{
 		if ((dd >= 1) && (dd <= 30))
 		{

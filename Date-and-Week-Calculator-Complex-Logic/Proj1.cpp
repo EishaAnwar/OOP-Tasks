@@ -115,6 +115,6 @@ void Date2019::plusday(int days)
 		print();																		//Printing Calling Object date
 		cout << " is ";
 		AfterDate.print();																//Printing Calulated Date stored in new object
-		cout << endl;
+		cout << \n;
 	}
 }

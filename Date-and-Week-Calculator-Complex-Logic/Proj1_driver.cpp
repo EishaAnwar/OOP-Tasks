@@ -9,6 +9,7 @@
 using namespace std;
 int main()
 {
+	cout<<"-----Now starting the program-----"<<endl;
 	int m = 0, dd = 0, plus = 0;
 	ifstream input;
 	input.open("Project.txt");
